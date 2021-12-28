@@ -2,7 +2,7 @@
 
 window.addEventListener("load", () =>{
 
-    // 2.1 Inserta dinamicamente en el html un div vacio con javascript. RESUELTO!!!
+    // 2.1 Inserta dinamicamente en el html un div vacio con javascript.
 
     const newDiv= document.createElement("div");
 
@@ -11,7 +11,7 @@ window.addEventListener("load", () =>{
     document.body.appendChild(newDiv);
 
 
-    // 2.2 Inserta dinamicamente en el html un div que contenga una p con javascript. RESUELTO!!!
+    // 2.2 Inserta dinamicamente en el html un div que contenga una p con javascript.
 
     const secondNewDiv= document.createElement("div");
     secondNewDiv.classList.add("secondDiv")
@@ -22,7 +22,7 @@ window.addEventListener("load", () =>{
     document.body.appendChild(secondNewDiv)
 
 
-    // 2.3 Inserta dinamicamente en un html un div que contenga 6 p utilizando un loop con javascript. RESUELTO!!!
+    // 2.3 Inserta dinamicamente en un html un div que contenga 6 p utilizando un loop con javascript.
 
     const thirdNewDiv = document.createElement("div");
     thirdNewDiv.classList.add("thirdDiv");
@@ -39,18 +39,18 @@ window.addEventListener("load", () =>{
     createDivs(thirdNewDiv);
     
 
-    // 2.4 Inserta dinamicamente con javascript en html una p con el texto 'Soy dinámico!'. RESUELTO!!!
+    // 2.4 Inserta dinamicamente con javascript en html una p con el texto 'Soy dinámico!'.
 
     thirdNewDiv.innerHTML= `<p>¡Soy dinámico!</p>`;
 
 
-    // 2.5 Inserta en el h2 con la clase .fn-insert-here el texto 'Wubba Lubba dub dub'. RESUELTO!!!
+    // 2.5 Inserta en el h2 con la clase .fn-insert-here el texto 'Wubba Lubba dub dub'.
 
     const header = document.querySelector(".fn-insert-here");
     header.innerHTML = `Wubba Lubba dub dub`;
 
 
-    // 2.6 Basandote en el siguiente array crea una lista ul > li con los textos del array. RESUELTO!!!
+    // 2.6 Basandote en el siguiente array crea una lista ul > li con los textos del array.
     const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
 
     const newList = document.createElement("div");
@@ -83,7 +83,7 @@ window.addEventListener("load", () =>{
     
 
 
-    // 2.8 Inserta una p con el texto 'Voy en medio!' entre los dos div. Recuerda que no solo puedes insertar elementos con .appendChild. RESUELTO!!!
+    // 2.8 Inserta una p con el texto 'Voy en medio!' entre los dos div. Recuerda que no solo puedes insertar elementos con .appendChild.
 
     const newP = document.createElement("p");
     const newT = document.createTextNode("¡Voy en medio!");
@@ -96,7 +96,7 @@ window.addEventListener("load", () =>{
     document.body.insertBefore(newP, beforeDiv);
 
 
-    // 2.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase .fn-insert-here. RESUELTO!!
+    // 2.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase .fn-insert-here.
 
     const insertHere = document.querySelector('[customName="afterMe"]');
     const insertAlsoHere = document.querySelector('[customName="beforeMe"]');
